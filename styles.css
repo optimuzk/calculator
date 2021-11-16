@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@700&family=Heebo:wght@600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    background-color: #34496b;
+    height: 100%;
+    font-family: 'Exo 2', sans-serif;
+    color: #d9dcd6;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 100px 4fr 5em;
+    grid-template-areas: 
+    ". . ."
+    ". main ."
+    "footer footer footer";
+}
+
+header{
+    grid-area: header;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header:hover{
+    color:#002137;
+}
+
+#square{
+    background-color: #EEEEEE;
+    width: 100%;
+    border-radius: 10px;
+
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 50px 1fr 1fr 1fr 10px;
+    grid-template-areas:
+    "marca ."
+    "result operations"
+    "numbers operations"
+    "numbers operations"
+    ". .";
+}
+#marca{
+    grid-area: marca;
+    font-family: 'Heebo', sans-serif;;
+    color: #002137;
+    padding-left: 2em;
+    padding-top: 15px;
+}
+
+#result{
+    background-color: #347634;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #303030;
+    margin: 1px;
+    height: 90%;
+    width: 90%;
+    font-size: 30px;
+    justify-self: center;
+    align-self: center;
+    grid-area: result;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+#result-content{
+    padding-right: 1em;
+}
+
+#numbers-space{
+    grid-area: numbers;
+    border-radius: 5px;
+    display: grid;
+    justify-items: stretch;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+    "1 2 3"
+    "4 5 6"
+    "7 8 9"
+    ". 0 .";
+}
+.numbers{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    background-color: #535454;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #303030;
+    margin: 1px;
+    height: 90%;
+    width: 90%;
+    color:rgb(233, 233, 233);
+    font-size: 20px;
+    font-family: 'Exo 2', sans-serif;
+}
+button:hover{
+    background-color: #454646;
+}
+
+
+
+#operations-space{
+    grid-area: operations;
+    display: grid;
+    justify-items: stretch;
+
+}
+
+
+#footer{
+    background-color: #272640;
+    margin-top: 2em;
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    color: #3a7400;
+}
