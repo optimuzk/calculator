@@ -21,6 +21,15 @@ body{
     ". main ."
     "footer footer footer";
 }
+@media (max-width: 600px) {
+    body{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 5em;
+        grid-template-areas: 
+        "main"
+        "footer";
+    }
+}
 
 header{
     grid-area: header;
