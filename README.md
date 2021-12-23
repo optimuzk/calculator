@@ -1,6 +1,6 @@
 # Kazio Calculator
 
-Its one of my recent projects, I'll finish it during January hopefuly!
+Its one of my recent projects, I'll finish it during January hopefully!
 
 ## Project Preview
 
